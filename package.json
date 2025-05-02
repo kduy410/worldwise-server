@@ -1,20 +1,12 @@
 {
-  "name": "worldwise-server",
+  "name": "json-server-vercel",
   "version": "1.0.0",
-  "description": "\"# worldwise-server\"",
-  "homepage": "https://github.com/kduy410/worldwise-server#readme",
-  "bugs": {
-    "url": "https://github.com/kduy410/worldwise-server/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kduy410/worldwise-server.git"
-  },
-  "license": "ISC",
-  "author": "",
-  "type": "commonjs",
-  "main": "index.js",
+  "description": "Deploy JSON Server to Vercel",
+  "main": "api/server.js",
   "scripts": {
-    "dev": "json-server --watch data/cities.json --port 8000"
+    "start": "node api/server.js"
+  },
+  "dependencies": {
+    "json-server": "^0.17.4"
   }
 }
